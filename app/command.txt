@@ -1,6 +1,0 @@
-/storage1/soft/spark-2.2.1-bin-hadoop2.7/bin/spark-shell --master yarn --deploy-mode client --keytab hiephm.keytab --principal hiephm/platform@HADOOP.SECURE --conf spark.yarn.access.hadoopFileSystems=hdfs://192.168.23.200:9000 --conf spark.sql.parquet.binaryAsString=true
-
-/storage1/soft/spark-2.2.1-bin-hadoop2.7/bin/spark-submit --class read.Main --master yarn --deploy-mode client --executor-memory 1G --keytab hiephm.keytab --principal hiephm/platform@HADOOP.SECURE --conf spark.yarn.access.hadoopFileSystems=hdfs://192.168.23.200:9000 App2.jar
-/data1/softs/spark-2.2.1/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.2.0 --class kafka.App --master local --deploy-mode client --keytab hiephm.keytab --principal hiephm/platform@HADOOP.SECURE Kafka.jar
-rsync -avzP -e "ssh -p 2395 -i /home/hiephm/.ssh" "/home/hiephm/eclipse/app/target/Kafka.jar" hiephm@10.5.0.242:/home/hiephm/3724
-ocal host is: "hd3724/10.5.37.24"; destination host is: "hd3713":9000; 
