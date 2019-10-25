@@ -129,7 +129,7 @@
 						</manifestEntries>
 					</archive>
 
-					<finalName>Kafka</finalName>
+					<finalName>Kafka1</finalName>
 				</configuration>
 			</plugin>
 			<plugin>
